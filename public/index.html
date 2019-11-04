@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#317EFB" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Workout Tracker</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Workout Tracker</h1>
+      <form>
+        <label for="exercise">Exercise:</label>
+        <input type="text" id="exercise" placeholder="Exercise" />
+
+        <label for="time">Time:</label>
+        <input type="text" id="time" placeholder="Time" />
+
+        <label for="speed">Speed:</label>
+        <input type="number" min="0" id="speed" placeholder="Speed" />
+
+        <label for="distance">Distance:</label>
+        <input type="number" min="0" id="distance" placeholder="Distance" />
+
+        <label for="laps">Laps</label>
+        <input type="number" min="0" id="laps" placeholder="Laps" />
+
+        <button id="sub-btn">Submit</button>
+        
+        <p role="alert" class="error"></p>
+      </form>
+     
+     </div>
+
+     <div class="wrapper">
+      <h1>Display Data</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Exercise</th>
+            <th>Time</th>
+            <th>Speed</th>
+            <th>Distance</th>
+            <th>Laps</th>
+          </tr>
+        </thead>
+        <tbody id="js-workouts"></tbody>
+      </table>
+       
+     </div>
+
+    <script src="/index.js"></script>
+  </body>
+</html>
